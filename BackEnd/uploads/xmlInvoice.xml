@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<nfe>
+  <notafiscal>
+    <dadosprestador>
+      <im>000022483</im>
+      <numeronota>009502</numeronota>
+      <dataemissao>17/07/2020</dataemissao>
+    </dadosprestador>
+    <dadostomador>
+      <tipodoc>J</tipodoc>
+      <documento>55233019004914</documento>
+      <ie>ISENTO</ie>
+      <nometomador>Associacao Paulista do Vale - Igrejas Adventistas</nometomador>
+      <pais>Brasil</pais>
+      <logradouro>Av. Barao do Rio Branco</logradouro>
+      <numero>000980</numero>
+      <complemento>.</complemento>
+      <bairro>Jd. Esplanada</bairro>
+      <uf>SP</uf>
+      <cidade>Sao Jose dos Campos</cidade>
+      <cep>12242800</cep>
+      <email>NT</email>
+    </dadostomador>
+    <dadosservico>
+      <pais>Brasil</pais>
+      <logradouro>Av. Barao do Rio Branco</logradouro>
+      <numero>000980</numero>
+      <complemento>.</complemento>
+      <bairro>Jd. Esplanada</bairro>
+      <uf>SP</uf>
+      <cidade>Sao Jose dos Campos</cidade>
+      <cep>12242800</cep>
+    </dadosservico>
+    <detalheservico>
+      <item>
+        <descricao>Taxa de Instalacao - 100,00#@SP Fonte: IBPT Chave D26078 Tributos Aprox.:  Federal R$ 13,45 (13,45%) Municipal R$ 4,17 (4,17%) Total R$ 17,62 (17,62%)</descricao>
+        <valor>100.00</valor>
+        <codigo>6190601</codigo>
+      </item>
+      <descontoIncondicional>0.00</descontoIncondicional>
+      <inss>0.00</inss>
+      <ir>0.00</ir>
+      <csll>0.00</csll>
+      <cofins>0.00</cofins>
+      <pispasep>0.00</pispasep>
+      <deducaoMaterial>0.00</deducaoMaterial>
+      <issretido>0</issretido>
+      <obs>.</obs>
+    </detalheservico>
+  </notafiscal>
+  <notafiscal>
+    <dadosprestador>
+      <im>000022483</im>
+      <numeronota>009503</numeronota>
+      <dataemissao>17/07/2020</dataemissao>
+    </dadosprestador>
+    <dadostomador>
+      <tipodoc>J</tipodoc>
+      <documento>06058894000157</documento>
+      <ie>ISENTO</ie>
+      <nometomador>POUSADA CHEVERNY LTDA</nometomador>
+      <pais>Brasil</pais>
+      <logradouro>AV ROBERTO SIMONSEN</logradouro>
+      <numero>000700</numero>
+      <complemento>.</complemento>
+      <bairro>VILA INGLESA</bairro>
+      <uf>SP</uf>
+      <cidade>Campos do Jordao</cidade>
+      <cep>12460000</cep>
+      <email>NT</email>
+    </dadostomador>
+    <dadosservico>
+      <pais>Brasil</pais>
+      <logradouro>AV ROBERTO SIMONSEN</logradouro>
+      <numero>000700</numero>
+      <complemento>.</complemento>
+      <bairro>VILA INGLESA</bairro>
+      <uf>SP</uf>
+      <cidade>Campos do Jordao</cidade>
+      <cep>12460000</cep>
+    </dadosservico>
+    <detalheservico>
+      <item>
+        <descricao>80 Mbps - SCM - Empresarial#@SP Fonte: IBPT Chave D26078 Tributos Aprox.:  Federal R$ 6,27 (13,45%) Municipal R$ 0,93 (1,99%) Total R$ 7,20 (15,44%)</descricao>
+        <valor>46.64</valor>
+        <codigo>6190601</codigo>
+      </item>
+      <descontoIncondicional>0.00</descontoIncondicional>
+      <inss>0.00</inss>
+      <ir>0.00</ir>
+      <csll>0.00</csll>
+      <cofins>0.00</cofins>
+      <pispasep>0.00</pispasep>
+      <deducaoMaterial>0.00</deducaoMaterial>
+      <issretido>0</issretido>
+      <obs>.</obs>
+    </detalheservico>
+  </notafiscal>
+</nfe>

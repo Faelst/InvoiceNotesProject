@@ -1,0 +1,15 @@
+{
+  "name": "innnerblom",
+  "version": "1.0.0",
+  "description": "Middleware de integração de notas fiscais eletronicas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src index.js"
+  },
+  "author": "Rafael Silverio",
+  "license": "ISC",
+  "dependencies": {
+    "soap": "^0.31.0"
+  }
+}
