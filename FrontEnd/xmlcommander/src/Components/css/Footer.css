@@ -1,7 +1,19 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+footer.footer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 25px;
+    background-color: whitesmoke;
+    box-shadow:  0 2px 23px 0 rgba(0,0,0,0.1),
+    0 2px 49px 0 rgba(0,0,0,0.06);
+    font-size: 16px;
+    
+}
+
 
 .f-name{
     font-family: 'Pacifico', cursive;
-    font-size: 16px;
+    font-size: 18px;
 }

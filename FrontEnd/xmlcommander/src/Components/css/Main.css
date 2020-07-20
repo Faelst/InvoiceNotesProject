@@ -1,0 +1,14 @@
+
+main > div {
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 15px #0004;
+}
+
+.a-center{
+    text-align: center;
+    align-items: center;
+    padding-left: 135px;
+    padding-right: 135px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

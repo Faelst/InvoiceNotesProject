@@ -7,13 +7,16 @@ export default (props) => (
     <nav className="menu">
       {/* Refatorar */}
       <Link to="/">
-        <i className="fa fa-home"></i> Início
+        <i className="fa fa-home"></i> Inicio
       </Link>
-      <Link to="/encaminharNotas">
-        <i className="fa fa-users"></i> Encaminhar Notas
+      <Link to="/users">
+        <i className="fa fa-file"></i> Enviar NFs-e
       </Link>
-      <Link to="/cancelarNotas">
-        <i className="fa fa-list-alt"></i> Cancelar Nota
+      <Link to="/cancelInvoice">
+        <i className="fa fa-ban"></i> Cancelar NFs-e
+      </Link>
+      <Link to="/">
+        <i className="fa fa-bar-chart"></i> Relatorios
       </Link>
     </nav>
   </aside>
