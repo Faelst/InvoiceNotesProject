@@ -85,7 +85,7 @@ export default class FileSelector extends Component {
         .post(`${EndPoint}/sendInvoice`, { invoiceInfo: JSON.stringify(e) })
         .then((resp) => {
           let progressSend = ((100 * (i + 1)) / objXml.data.length).toFixed(1);
-          if (((100 * (i + 1)) / objXml.data.length).toFixed(1) == 100.0)
+          if (((100 * (i + 1)) / objXml.data.length).toFixed(1) === 100.0)
             progressSend = 100;
           this.setState({ progressSend });
           this.handleChangeDisplay(resp, e, `${progressSend}%`);
@@ -111,17 +111,8 @@ export default class FileSelector extends Component {
         <div className='a-center'>
           <DisplayInvoice getNextInvoice={this.state.nextInvoiceSeries} />
           <InputFile handleSelectChange={this.handleSelectChange} />
-          <Button
-            handleChangeDisplay={this.handleChangeDisplay}
-            postFile={this.postFile}
-          />
-          <ProgressBar
-            now={this.state.progressSend}
-            label={
-              this.state.progressSend != 0 ? `${this.state.progressSend}%` : ""
-            }
-            variant={this.state.progressColor}
-          />
+          <Button handleChangeDisplay={this.handleChangeDisplay} postFile={this.postFile}/>
+          <ProgressBar now={this.state.progressSend} label={this.state.progressSend !== 0 ? `${this.state.progressSend}%` : ""} variant={this.state.progressColor}/>
           <DisplayLog value={this.state.value} />
         </div>
       </Main>
