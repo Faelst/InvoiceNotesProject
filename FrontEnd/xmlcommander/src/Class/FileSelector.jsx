@@ -14,7 +14,7 @@ import Main from "../Components/Main";
 import "./FileSelector.css";
 
 //API URL
-const EndPoint = "http://localhost:3003/api";
+const EndPoint = "http://10.16.128.109:3003/api";
 
 const intialState = {
   listLog: [],

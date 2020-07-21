@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import Main from "../Components/Main";
 import Modal from '../Components/Modal'
-
+import axios from 'axios'
 
 import './css/CancelInvoice.css'
 
@@ -33,6 +33,11 @@ export default class CancelInvoice extends Component {
   }
 
   cancelInvoice() {
+    
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     if (this.state.invoiceSerieNumber === '' || this.state.reasonCancellation === '') {
       if (this.state.invoiceSerieNumber === '') document.getElementById('invoiceSerieNumber').setAttribute('class', 'form-control border border-danger')
@@ -40,6 +45,17 @@ export default class CancelInvoice extends Component {
       return '';
     }
     
+    // fazer aparecer o Modal no momento do click
+
+    var jsonCancel = [{
+      im: "000022483",
+      numeroNota: this.state.invoiceSerieNumber,
+      motivoCancelamento: this.state.reasonCancellation
+    }]
+
+    axios.post('')
+      .then()
+  
   }
 
 
@@ -57,7 +73,7 @@ export default class CancelInvoice extends Component {
           </div>
           <hr />
           <div className="d-flex flex-row-reverse">
-            <Modal cancelInvoice={this.cancelInvoice} modalStatus={true}/>
+            <Modal  cancelInvoice={this.cancelInvoice} modalStatus={false} handleClose={this.setShow}/>
           </div>
         </div>
       </Main>

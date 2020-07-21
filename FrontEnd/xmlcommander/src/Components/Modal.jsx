@@ -5,14 +5,14 @@ import Modal from 'react-bootstrap/Modal'
 
 export default (props) => {
 
-    const [show, setShow] = useState(props.modalStatus);
-    
-    const handleClose = () => props.setShow(false);
-    const handleShow = () => props.setShow(true);
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     return (
         <React.Fragment>
-            <Button variant="primary" onClick={props.cancelInvoice} className='btn btn-warning'>Cancelar Nota</Button>
+            <Button variant="primary" onClick={props.handleShow} className='btn btn-warning'>Cancelar Nota</Button>
             <Modal
                 show={show}
                 onHide={handleClose}
