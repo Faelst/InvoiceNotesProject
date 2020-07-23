@@ -14,5 +14,7 @@ module.exports = function (server) {
     server.get('/api/getNextInvoice', xmlApi.getNextInvoice)
 
     server.post('/api/sendInvoice', xmlApi.sendInvoice)
+    
+    //server.post('/api/cancelInvoice', xmlApi.cancelInvoice)
 
 }

@@ -4,8 +4,8 @@
   "description": "",
   "main": "./src/loader.js",
   "scripts": {
-    "dev": "nodemon ./src/loader.js",
-    "production": "pm2 start src/loader.js --name todo-app"
+    "dev": "set PORT=3000 && nodemon ./src/loader.js",
+    "production": "pm2 start src/loader.js --name InvoiceNotesProjectBackEnd"
   },
   "keywords": [],
   "author": "",

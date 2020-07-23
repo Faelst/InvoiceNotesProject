@@ -1,9 +1,12 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
+import './css/CancelInvoice.css'
+
 import Main from "../Components/Main";
 import Modal from '../Components/Modal'
-import axios from 'axios'
 
-import './css/CancelInvoice.css'
+import axios from 'axios'
+const EndPoint = "http://10.16.128.109:3003/api";
+
 
 const headerPerson = {
   icon: "ban",
@@ -18,13 +21,14 @@ const intialState = {
   show: false
 }
 
-export default class CancelInvoice extends Component {
+export default class inputValidate extends Component {
   constructor(props) {
     super(props);
     this.state = { ...intialState }
     this.handleChange = this.handleChange.bind(this)
+    this.inputValidate = this.inputValidate.bind(this)
+    this.handleModal = this.handleModal.bind(this)
     this.cancelInvoice = this.cancelInvoice.bind(this)
-    
   }
 
   handleChange(e) {
@@ -32,32 +36,37 @@ export default class CancelInvoice extends Component {
     this.setState({ [e.target.id]: e.target.value })
   }
 
-  cancelInvoice() {
-    
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+  inputValidate() {
 
     if (this.state.invoiceSerieNumber === '' || this.state.reasonCancellation === '') {
       if (this.state.invoiceSerieNumber === '') document.getElementById('invoiceSerieNumber').setAttribute('class', 'form-control border border-danger')
       if (this.state.reasonCancellation === '') document.getElementById('reasonCancellation').setAttribute('class', 'form-control border border-danger')
       return '';
     }
-    
-    // fazer aparecer o Modal no momento do click
+    this.handleModal();
+  }
 
+  handleModal() {
+    this.setState({
+      setShow : !this.state.setShow,
+      show: !this.state.setShow
+    })
+  }
+
+  cancelInvoice(){
     var jsonCancel = [{
       im: "000022483",
       numeroNota: this.state.invoiceSerieNumber,
       motivoCancelamento: this.state.reasonCancellation
     }]
 
-    axios.post('')
-      .then()
-  
-  }
+    const headers = {
+      'Content-Type': 'application/json',
+    }    
 
+    axios.post(`${EndPoint}/cancelInvoice` , {headers} , JSON.parse(jsonCancel)).then(resp => console.log(resp));
+
+  }
 
   render() {
     return (
@@ -73,7 +82,7 @@ export default class CancelInvoice extends Component {
           </div>
           <hr />
           <div className="d-flex flex-row-reverse">
-            <Modal  cancelInvoice={this.cancelInvoice} modalStatus={false} handleClose={this.setShow}/>
+            <Modal inputValidate={this.inputValidate} handleClose={this.handleModal} show={this.state.show} invoiceSerieNumber={this.state.invoiceSerieNumber} reasonCancellation={this.state.reasonCancellation} cancelInvoice={this.cancelInvoice} />
           </div>
         </div>
       </Main>

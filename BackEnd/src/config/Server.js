@@ -1,5 +1,5 @@
 
-const port = 3003
+const port = process.env.PORT || 3003
 
 const express = require('express')
 const server = express()

@@ -30,9 +30,13 @@ const sendInvoice = async (req, res) => {
     res.send(sendObj)
 }
 
+//const cancelInvoice = async (req,res ){
+
+//}
 
 module.exports = {
     getNextInvoice,
     sendInvoice,
-    getConvet2Json
+    getConvet2Json,
+    //cancelInvoice
 }

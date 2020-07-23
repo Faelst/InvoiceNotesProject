@@ -32,4 +32,4 @@ var jsonCancel = [{
   motivoCancelamento: "Nota emitida Indevidamente, DUPLICIDADE DE BOLETO DO MES DE JULHO."
 }]
 
-//innerBloom.setCancelNfeOnly(jsonCancel).then(val => console.log(val.retorno['$value']))
+innerBloom.setCancelNfeOnly(jsonCancel).then(val => console.log(val.retorno['$value']))

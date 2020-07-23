@@ -3,38 +3,38 @@
   <notafiscal>
     <dadosprestador>
       <im>000022483</im>
-      <numeronota>009502</numeronota>
-      <dataemissao>17/07/2020</dataemissao>
+      <numeronota>009525</numeronota>
+      <dataemissao>22/07/2020</dataemissao>
     </dadosprestador>
     <dadostomador>
       <tipodoc>J</tipodoc>
-      <documento>55233019004914</documento>
+      <documento>09095412000127</documento>
       <ie>ISENTO</ie>
-      <nometomador>Associacao Paulista do Vale - Igrejas Adventistas</nometomador>
+      <nometomador>ABBC-ASSOCIACAO BRASILEIRA DE BENEFICENCIA COMUNITARIA</nometomador>
       <pais>Brasil</pais>
-      <logradouro>Av. Barao do Rio Branco</logradouro>
-      <numero>000980</numero>
-      <complemento>.</complemento>
-      <bairro>Jd. Esplanada</bairro>
+      <logradouro>Rua Sete de Abril</logradouro>
+      <numero>000264</numero>
+      <complemento>Conjunto 712</complemento>
+      <bairro>Republica</bairro>
       <uf>SP</uf>
-      <cidade>Sao Jose dos Campos</cidade>
-      <cep>12242800</cep>
-      <email>NT</email>
+      <cidade>Sao Paulo</cidade>
+      <cep>01044000</cep>
+      <email>nota.fiscal@abbcsaude.org.br</email>
     </dadostomador>
     <dadosservico>
       <pais>Brasil</pais>
-      <logradouro>Av. Barao do Rio Branco</logradouro>
-      <numero>000980</numero>
-      <complemento>.</complemento>
-      <bairro>Jd. Esplanada</bairro>
+      <logradouro>Rua Sete de Abril</logradouro>
+      <numero>000264</numero>
+      <complemento>Conjunto 712</complemento>
+      <bairro>Republica</bairro>
       <uf>SP</uf>
-      <cidade>Sao Jose dos Campos</cidade>
-      <cep>12242800</cep>
+      <cidade>Sao Paulo</cidade>
+      <cep>01044000</cep>
     </dadosservico>
     <detalheservico>
       <item>
-        <descricao>Taxa de Instalacao - 100,00#@SP Fonte: IBPT Chave D26078 Tributos Aprox.:  Federal R$ 13,45 (13,45%) Municipal R$ 4,17 (4,17%) Total R$ 17,62 (17,62%)</descricao>
-        <valor>100.00</valor>
+        <descricao>COD18 - SERVICO DE VALOR ADICIONADO#@SP Fonte: IBPT Chave D26078 Tributos Aprox.:  Federal R$ 476,90 (13,45%) Municipal R$ 70,91 (2,00%) Total R$ 547,81 (15,45%)</descricao>
+        <valor>3545.70</valor>
         <codigo>6190601</codigo>
       </item>
       <descontoIncondicional>0.00</descontoIncondicional>
@@ -51,38 +51,38 @@
   <notafiscal>
     <dadosprestador>
       <im>000022483</im>
-      <numeronota>009503</numeronota>
-      <dataemissao>17/07/2020</dataemissao>
+      <numeronota>009526</numeronota>
+      <dataemissao>22/07/2020</dataemissao>
     </dadosprestador>
     <dadostomador>
       <tipodoc>J</tipodoc>
-      <documento>06058894000157</documento>
+      <documento>09095412000127</documento>
       <ie>ISENTO</ie>
-      <nometomador>POUSADA CHEVERNY LTDA</nometomador>
+      <nometomador>ABBC-ASSOCIACAO BRASILEIRA DE BENEFICENCIA COMUNITARIA</nometomador>
       <pais>Brasil</pais>
-      <logradouro>AV ROBERTO SIMONSEN</logradouro>
-      <numero>000700</numero>
-      <complemento>.</complemento>
-      <bairro>VILA INGLESA</bairro>
+      <logradouro>Rua Sete de Abril</logradouro>
+      <numero>000264</numero>
+      <complemento>Conjunto 712</complemento>
+      <bairro>Republica</bairro>
       <uf>SP</uf>
-      <cidade>Campos do Jordao</cidade>
-      <cep>12460000</cep>
-      <email>NT</email>
+      <cidade>Sao Paulo</cidade>
+      <cep>01044000</cep>
+      <email>nota.fiscal@abbcsaude.org.br</email>
     </dadostomador>
     <dadosservico>
       <pais>Brasil</pais>
-      <logradouro>AV ROBERTO SIMONSEN</logradouro>
-      <numero>000700</numero>
-      <complemento>.</complemento>
-      <bairro>VILA INGLESA</bairro>
+      <logradouro>Rua Sete de Abril</logradouro>
+      <numero>000264</numero>
+      <complemento>Conjunto 712</complemento>
+      <bairro>Republica</bairro>
       <uf>SP</uf>
-      <cidade>Campos do Jordao</cidade>
-      <cep>12460000</cep>
+      <cidade>Sao Paulo</cidade>
+      <cep>01044000</cep>
     </dadosservico>
     <detalheservico>
       <item>
-        <descricao>80 Mbps - SCM - Empresarial#@SP Fonte: IBPT Chave D26078 Tributos Aprox.:  Federal R$ 6,27 (13,45%) Municipal R$ 0,93 (1,99%) Total R$ 7,20 (15,44%)</descricao>
-        <valor>46.64</valor>
+        <descricao>COD18 - SERVICO DE VALOR ADICIONADO#@SP Fonte: IBPT Chave D26078 Tributos Aprox.:  Federal R$ 476,90 (13,45%) Municipal R$ 70,91 (2,00%) Total R$ 547,81 (15,45%)</descricao>
+        <valor>3545.70</valor>
         <codigo>6190601</codigo>
       </item>
       <descontoIncondicional>0.00</descontoIncondicional>
