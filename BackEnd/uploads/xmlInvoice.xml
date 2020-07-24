@@ -3,86 +3,38 @@
   <notafiscal>
     <dadosprestador>
       <im>000022483</im>
-      <numeronota>009525</numeronota>
-      <dataemissao>22/07/2020</dataemissao>
+      <numeronota>009529</numeronota>
+      <dataemissao>23/07/2020</dataemissao>
     </dadosprestador>
     <dadostomador>
-      <tipodoc>J</tipodoc>
-      <documento>09095412000127</documento>
+      <tipodoc>F</tipodoc>
+      <documento>46300285871</documento>
       <ie>ISENTO</ie>
-      <nometomador>ABBC-ASSOCIACAO BRASILEIRA DE BENEFICENCIA COMUNITARIA</nometomador>
+      <nometomador>Rafael Augusto Silverio</nometomador>
       <pais>Brasil</pais>
-      <logradouro>Rua Sete de Abril</logradouro>
-      <numero>000264</numero>
-      <complemento>Conjunto 712</complemento>
-      <bairro>Republica</bairro>
+      <logradouro>Rua Aloisio do Amaral Campos</logradouro>
+      <numero>000529</numero>
+      <complemento>.</complemento>
+      <bairro>Jardim Esperanca</bairro>
       <uf>SP</uf>
-      <cidade>Sao Paulo</cidade>
-      <cep>01044000</cep>
-      <email>nota.fiscal@abbcsaude.org.br</email>
+      <cidade>Jacarei</cidade>
+      <cep>12324120</cep>
+      <email>rafael.silverio@vivastelecom.com.br</email>
     </dadostomador>
     <dadosservico>
       <pais>Brasil</pais>
-      <logradouro>Rua Sete de Abril</logradouro>
-      <numero>000264</numero>
-      <complemento>Conjunto 712</complemento>
-      <bairro>Republica</bairro>
+      <logradouro>Rua Aloisio do Amaral Campos</logradouro>
+      <numero>000529</numero>
+      <complemento>.</complemento>
+      <bairro>Jardim Esperanca</bairro>
       <uf>SP</uf>
-      <cidade>Sao Paulo</cidade>
-      <cep>01044000</cep>
+      <cidade>Jacarei</cidade>
+      <cep>12324120</cep>
     </dadosservico>
     <detalheservico>
       <item>
-        <descricao>COD18 - SERVICO DE VALOR ADICIONADO#@SP Fonte: IBPT Chave D26078 Tributos Aprox.:  Federal R$ 476,90 (13,45%) Municipal R$ 70,91 (2,00%) Total R$ 547,81 (15,45%)</descricao>
-        <valor>3545.70</valor>
-        <codigo>6190601</codigo>
-      </item>
-      <descontoIncondicional>0.00</descontoIncondicional>
-      <inss>0.00</inss>
-      <ir>0.00</ir>
-      <csll>0.00</csll>
-      <cofins>0.00</cofins>
-      <pispasep>0.00</pispasep>
-      <deducaoMaterial>0.00</deducaoMaterial>
-      <issretido>0</issretido>
-      <obs>.</obs>
-    </detalheservico>
-  </notafiscal>
-  <notafiscal>
-    <dadosprestador>
-      <im>000022483</im>
-      <numeronota>009526</numeronota>
-      <dataemissao>22/07/2020</dataemissao>
-    </dadosprestador>
-    <dadostomador>
-      <tipodoc>J</tipodoc>
-      <documento>09095412000127</documento>
-      <ie>ISENTO</ie>
-      <nometomador>ABBC-ASSOCIACAO BRASILEIRA DE BENEFICENCIA COMUNITARIA</nometomador>
-      <pais>Brasil</pais>
-      <logradouro>Rua Sete de Abril</logradouro>
-      <numero>000264</numero>
-      <complemento>Conjunto 712</complemento>
-      <bairro>Republica</bairro>
-      <uf>SP</uf>
-      <cidade>Sao Paulo</cidade>
-      <cep>01044000</cep>
-      <email>nota.fiscal@abbcsaude.org.br</email>
-    </dadostomador>
-    <dadosservico>
-      <pais>Brasil</pais>
-      <logradouro>Rua Sete de Abril</logradouro>
-      <numero>000264</numero>
-      <complemento>Conjunto 712</complemento>
-      <bairro>Republica</bairro>
-      <uf>SP</uf>
-      <cidade>Sao Paulo</cidade>
-      <cep>01044000</cep>
-    </dadosservico>
-    <detalheservico>
-      <item>
-        <descricao>COD18 - SERVICO DE VALOR ADICIONADO#@SP Fonte: IBPT Chave D26078 Tributos Aprox.:  Federal R$ 476,90 (13,45%) Municipal R$ 70,91 (2,00%) Total R$ 547,81 (15,45%)</descricao>
-        <valor>3545.70</valor>
+        <descricao>Servico de Antivirus (Teste)#@SP Fonte: IBPT Chave D26078 Tributos Aprox.:  Federal R$ 0,09 (12,86%) Municipal R$ 0,01 (1,43%) Total R$ 0,10 (14,29%)</descricao>
+        <valor>0.70</valor>
         <codigo>6190601</codigo>
       </item>
       <descontoIncondicional>0.00</descontoIncondicional>

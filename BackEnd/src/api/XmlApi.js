@@ -30,13 +30,20 @@ const sendInvoice = async (req, res) => {
     res.send(sendObj)
 }
 
-//const cancelInvoice = async (req,res ){
+const cancelInvoice = async (req, res) => {
 
-//}
+    var jsonCancel = [{
+        im: "000000014",
+        numeroNota: "140",
+        motivoCancelamento: "Nota emitida Indevidamente, DUPLICIDADE DE BOLETO DO MES DE JULHO."
+    }]
+    const cancelResponse = await innerBloom.setCancelNfeOnly(jsonCancel).then(val => val.retorno['$value'])
+    res.send(cancelResponse);
+}
 
 module.exports = {
     getNextInvoice,
     sendInvoice,
     getConvet2Json,
-    //cancelInvoice
+    cancelInvoice
 }

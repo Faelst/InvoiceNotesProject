@@ -1,20 +1,14 @@
-const express = require('express')
 const upload = require('./Multer')
+const xmlApi = require('../api/XmlApi');
 
 module.exports = function (server) {
 
     // API Routes
-    const router = express.Router()
-    server.use('/api', router)
+    server.post('/convertJson', upload.single('file') , xmlApi.getConvet2Json);
 
-    const xmlApi = require('../api/XmlApi')
+    server.get('/getNextInvoice', xmlApi.getNextInvoice);
 
-    server.post('/api/convertJson', upload.single('file') , xmlApi.getConvet2Json)
-
-    server.get('/api/getNextInvoice', xmlApi.getNextInvoice)
-
-    server.post('/api/sendInvoice', xmlApi.sendInvoice)
+    server.post('/sendInvoice', xmlApi.sendInvoice);
     
-    //server.post('/api/cancelInvoice', xmlApi.cancelInvoice)
-
+    server.post('/cancelInvoice', xmlApi.cancelInvoice);
 }
