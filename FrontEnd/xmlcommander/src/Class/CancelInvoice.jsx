@@ -7,8 +7,8 @@ import Modal from '../Components/Modal'
 import axios from 'axios'
 
 //API URL
-let port
-process.env.NODE_ENV === "development" ? port = 5005 : port = 3003;
+let port = 5005
+
 const EndPoint = `http://10.16.128.109:${port}/api`;
 
 const headerPerson = {
@@ -21,17 +21,22 @@ const intialState = {
   invoiceSerieNumber: '',
   reasonCancellation: '',
   setShow: false,
-  show: false
+  show: false,
+  headerIcon: 'fa-exclamation-triangle',
+  headerTitle: 'Aviso',
+  bodyText: 'Deseja Cancelar a nº',
+  hideButton: false
 }
 
 export default class inputValidate extends Component {
   constructor(props) {
     super(props);
-    this.state = { ...intialState }
     this.handleChange = this.handleChange.bind(this)
     this.inputValidate = this.inputValidate.bind(this)
     this.handleModal = this.handleModal.bind(this)
     this.cancelInvoice = this.cancelInvoice.bind(this)
+
+    this.state = { ...intialState }
   }
 
   handleChange(e) {
@@ -40,7 +45,6 @@ export default class inputValidate extends Component {
   }
 
   inputValidate() {
-
     if (this.state.invoiceSerieNumber === '' || this.state.reasonCancellation === '') {
       if (this.state.invoiceSerieNumber === '') document.getElementById('invoiceSerieNumber').setAttribute('class', 'form-control border border-danger')
       if (this.state.reasonCancellation === '') document.getElementById('reasonCancellation').setAttribute('class', 'form-control border border-danger')
@@ -51,24 +55,36 @@ export default class inputValidate extends Component {
 
   handleModal() {
     this.setState({
-      setShow : !this.state.setShow,
+      setShow: !this.state.setShow,
       show: !this.state.setShow
     })
+    if(!this.state.setShow === false) this.setState({...intialState})
   }
 
-  cancelInvoice(){
-    console.log('entri no cancel')
+  cancelInvoice() {
     var jsonCancel = [{
-      im: "000022483",
+      im: "000000014",
       numeroNota: this.state.invoiceSerieNumber,
       motivoCancelamento: this.state.reasonCancellation
     }]
 
     const headers = {
       'Content-Type': 'application/json',
-    }    
+    }
 
-    axios.post(`${EndPoint}/cancelInvoice` /*, {headers} , JSON.parse(jsonCancel)*/).then(resp => console.log(resp));
+    axios.post(`${EndPoint}/cancelInvoice`, jsonCancel)
+      .then(resp => {
+        if (resp.data.status === true) {
+          return this.setState({
+              headerIcon: 'fa-check-circle',
+              headerTitle: 'Nota Cancelada',
+              bodyText: `Nota com a serie ${resp.data.cancelInvoiceInformation[0].invoiceSerieNumber} foi cancelada com sucesso !`,
+              hideButton: true,
+              invoiceSerieNumber: undefined,
+              reasonCancellation : undefined
+            })
+        }
+      });
 
   }
 
@@ -82,11 +98,11 @@ export default class inputValidate extends Component {
           </div>
           <label >Numero da nota:</label>
           <div className="input-group mb-3">
-            <textarea rows="4" type="text" className="form-control" id='reasonCancellation' onChange={this.handleChange} />
+            <textarea rows="4" type="text" className="form-control" id='reasonCancellation' onChange={this.handleChange} value={this.state.reasonCancellation}/>
           </div>
           <hr />
           <div className="d-flex flex-row-reverse">
-            <Modal cancelInvoice={this.cancelInvoice} inputValidate={this.inputValidate} handleClose={this.handleModal} show={this.state.show} invoiceSerieNumber={this.state.invoiceSerieNumber} reasonCancellation={this.state.reasonCancellation} />
+            <Modal hideButton={this.state.hideButton} headerTitle={this.state.headerTitle} bodyText={this.state.bodyText} headerIcon={this.state.headerIcon} cancelInvoice={this.cancelInvoice} inputValidate={this.inputValidate} handleClose={this.handleModal} show={this.state.show} invoiceSerieNumber={this.state.invoiceSerieNumber} reasonCancellation={this.state.reasonCancellation} />
           </div>
         </div>
       </Main>

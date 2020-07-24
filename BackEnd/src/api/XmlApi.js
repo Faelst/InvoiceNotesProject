@@ -32,13 +32,25 @@ const sendInvoice = async (req, res) => {
 
 const cancelInvoice = async (req, res) => {
 
-    var jsonCancel = [{
-        im: "000000014",
-        numeroNota: "140",
-        motivoCancelamento: "Nota emitida Indevidamente, DUPLICIDADE DE BOLETO DO MES DE JULHO."
-    }]
-    const cancelResponse = await innerBloom.setCancelNfeOnly(jsonCancel).then(val => val.retorno['$value'])
-    res.send(cancelResponse);
+    var jsonCancel = req.body
+    const cancelResponse = await innerBloom.setCancelNfeOnly(jsonCancel).then(val => val)
+    if (cancelResponse.retorno['$value'] == 'Notas canceladas com sucesso') {
+        return res.status(200).send({
+            status: true,
+            cancelInvoiceInformation: [{
+                invoiceSerieNumber: req.body[0].numeroNota,
+                reasonCancellation: req.body[0].motivoCancelamento,
+            }]
+        });
+    }
+    return res.status(201).send({
+        status: false,
+        error: cancelResponse.retorno['$value'],
+        cancelInvoiceInformation: [{
+            invoiceSerieNumber: req.body[0].numeroNota,
+            reasonCancellation: req.body[0].motivoCancelamento,
+        }]
+    })
 }
 
 module.exports = {
@@ -47,3 +59,4 @@ module.exports = {
     getConvet2Json,
     cancelInvoice
 }
+

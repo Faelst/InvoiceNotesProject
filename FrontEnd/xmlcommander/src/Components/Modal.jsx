@@ -17,18 +17,18 @@ export default (props) => {
                 <Modal.Header closeButton>
                     <Modal.Title>
                         <h4 className="mt-3">
-                            <i className={`fa fa-exclamation-triangle mr-2`}></i>
-                             Aviso
+                            <i className={`fa ${props.headerIcon} mr-2`}></i>
+                            {props.headerTitle}
                         </h4>
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <h5>Deseja realmente Cancelar a nº <strong>{props.invoiceSerieNumber}</strong> ?</h5>
-                    <p>Motivo: {props.reasonCancellation}</p>
+                    <h5>{props.bodyText} <strong>{'' || props.invoiceSerieNumber}</strong> </h5>
+                    <p>{props.reasonCancellation ? 'Motivo: ' : ''}{props.reasonCancellation || ''}</p>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="danger" onClick={props.handleClose}>Voltar</Button>
-                    <Button variant="warning" onClick={props.cancelInvoice}>Sim, Cancelar</Button>
+                    <button className="btn btn-danger" onClick={props.handleClose}>Voltar</button>
+                    {props.hideButton == false ? <button className="btn btn-warning" onClick={props.cancelInvoice}>Sim, Cancelar</button> : ''}
                 </Modal.Footer>
             </Modal>
         </React.Fragment>

@@ -34,3 +34,9 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+.hideButton {
+  visibility: visibility;
+  opacity: 0;
+  transition: hidden 0s, opacity 0.5s linear;
+}
