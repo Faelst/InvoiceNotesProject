@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal'
@@ -28,7 +28,7 @@ export default (props) => {
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="danger" onClick={props.handleClose}>Voltar</Button>
-                    <Button variant="warning" onClick={e => alert('Nota Cancelada')/*props.cancelInvoice*/}>Sim, Cancelar</Button>
+                    <Button variant="warning" onClick={props.cancelInvoice}>Sim, Cancelar</Button>
                 </Modal.Footer>
             </Modal>
         </React.Fragment>

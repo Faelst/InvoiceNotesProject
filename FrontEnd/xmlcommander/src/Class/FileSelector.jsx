@@ -14,7 +14,10 @@ import Main from "../Components/Main";
 import "./FileSelector.css";
 
 //API URL
-const EndPoint = "http://10.16.128.109:3003/api";
+let port
+console.log(process.env.NODE_ENV)
+console.log(process.env.PORT)
+const EndPoint = `http://10.16.128.109:${3003}/api`;
 
 const intialState = {
   listLog: [],
@@ -51,13 +54,13 @@ export default class FileSelector extends Component {
   }
 
   handleChangeDisplay(resp, e) {
-    this.state.listLog += `Nota: ${e.NumeroNota}\nStatus da Nota: ${resp.data.invoiceSendResponse.retorno["$value"]}\n-------------------------------------------------------------------------------------------------------------------------------------------------------\n`;
-    this.setState({ value: this.state.listLog });
+    let listLog = this.state.listLog;
+    listLog += `Nota: ${e.NumeroNota}\nStatus da Nota: ${resp.data.invoiceSendResponse.retorno["$value"]}\n-----------------------------------------------------------------------------------------------------------------------------------------------------\n`;
+    this.setState({ value: listLog });
   }
 
   clearLog() {
-    this.setState({ value: intialState.listLog });
-    this.state.listLog = intialState.listLog;
+    this.setState({ value: intialState.listLog, listLog: intialState.listLog })
   }
 
   handleSelectChange(e) {
@@ -111,8 +114,8 @@ export default class FileSelector extends Component {
         <div className='a-center'>
           <DisplayInvoice getNextInvoice={this.state.nextInvoiceSeries} />
           <InputFile handleSelectChange={this.handleSelectChange} />
-          <Button handleChangeDisplay={this.handleChangeDisplay} postFile={this.postFile}/>
-          <ProgressBar now={this.state.progressSend} label={this.state.progressSend !== 0 ? `${this.state.progressSend}%` : ""} variant={this.state.progressColor}/>
+          <Button handleChangeDisplay={this.handleChangeDisplay} postFile={this.postFile} />
+          <ProgressBar now={this.state.progressSend} label={this.state.progressSend !== 0 ? `${this.state.progressSend}%` : ""} variant={this.state.progressColor} />
           <DisplayLog value={this.state.value} />
         </div>
       </Main>

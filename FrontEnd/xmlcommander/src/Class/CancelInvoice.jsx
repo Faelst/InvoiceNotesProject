@@ -5,8 +5,11 @@ import Main from "../Components/Main";
 import Modal from '../Components/Modal'
 
 import axios from 'axios'
-const EndPoint = "http://10.16.128.109:3003/api";
 
+//API URL
+let port
+process.env.NODE_ENV === "development" ? port = 5005 : port = 3003;
+const EndPoint = `http://10.16.128.109:${port}/api`;
 
 const headerPerson = {
   icon: "ban",
@@ -54,6 +57,7 @@ export default class inputValidate extends Component {
   }
 
   cancelInvoice(){
+    console.log('entri no cancel')
     var jsonCancel = [{
       im: "000022483",
       numeroNota: this.state.invoiceSerieNumber,
@@ -64,7 +68,7 @@ export default class inputValidate extends Component {
       'Content-Type': 'application/json',
     }    
 
-    axios.post(`${EndPoint}/cancelInvoice` , {headers} , JSON.parse(jsonCancel)).then(resp => console.log(resp));
+    axios.post(`${EndPoint}/cancelInvoice` /*, {headers} , JSON.parse(jsonCancel)*/).then(resp => console.log(resp));
 
   }
 
@@ -82,7 +86,7 @@ export default class inputValidate extends Component {
           </div>
           <hr />
           <div className="d-flex flex-row-reverse">
-            <Modal inputValidate={this.inputValidate} handleClose={this.handleModal} show={this.state.show} invoiceSerieNumber={this.state.invoiceSerieNumber} reasonCancellation={this.state.reasonCancellation} cancelInvoice={this.cancelInvoice} />
+            <Modal cancelInvoice={this.cancelInvoice} inputValidate={this.inputValidate} handleClose={this.handleModal} show={this.state.show} invoiceSerieNumber={this.state.invoiceSerieNumber} reasonCancellation={this.state.reasonCancellation} />
           </div>
         </div>
       </Main>
