@@ -7,9 +7,9 @@ import Modal from '../Components/Modal'
 import axios from 'axios'
 
 //API URL
-let port = 5005
+const port = 3003
 
-const EndPoint = `http://10.16.128.109:${port}/api`;
+const EndPoint = `http://10.16.128.91:${port}/api`;
 
 const headerPerson = {
   icon: "ban",
@@ -63,7 +63,7 @@ export default class inputValidate extends Component {
 
   cancelInvoice() {
     var jsonCancel = [{
-      im: "000000014",
+      im: "000022483",
       numeroNota: this.state.invoiceSerieNumber,
       motivoCancelamento: this.state.reasonCancellation
     }]

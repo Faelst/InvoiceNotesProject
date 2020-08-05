@@ -18,7 +18,8 @@
   },
   "scripts": {
     "start": "set PORT=3001 && react-scripts start && set PORT_BACK=5005",
-    "build": "react-scripts build",
+    "build": " pm2.cmd start .\\node_modules\\react-scripts\\scripts\\start.js --name InvoiceNotesProjectFrontEnd",
+    "deploy": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

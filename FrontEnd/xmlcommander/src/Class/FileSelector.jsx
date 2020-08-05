@@ -13,11 +13,9 @@ import Main from "../Components/Main";
 //css's
 import "./FileSelector.css";
 
-//API URL
-let port
-console.log(process.env.NODE_ENV)
-console.log(process.env.PORT)
-const EndPoint = `http://10.16.128.109:${3003}/api`;
+//API URLs
+const port = 3003
+const EndPoint = `http://10.16.128.91:${port}/api`;
 
 const intialState = {
   listLog: [],
