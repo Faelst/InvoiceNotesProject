@@ -1,15 +1,14 @@
 import React, { Component } from "react";
 import './css/CancelInvoice.css'
-
 import Main from "../Components/Main";
 import Modal from '../Components/Modal'
-
 import axios from 'axios'
+import security from '../security/acess'
 
-//API URL
-const port = 3003
+//API URLs
+const port = security.portClass.prodPort // security.portClass.devPort
+const EndPoint = `${security.endPoint}${port}/api`;
 
-const EndPoint = `http://10.16.128.91:${port}/api`;
 
 const headerPerson = {
   icon: "ban",

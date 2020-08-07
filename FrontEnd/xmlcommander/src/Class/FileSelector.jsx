@@ -12,10 +12,11 @@ import Main from "../Components/Main";
 
 //css's
 import "./FileSelector.css";
+import security from '../security/acess'
 
 //API URLs
-const port = 3003
-const EndPoint = `http://10.16.128.91:${port}/api`;
+const port = security.portClass.prodPort // security.portClass.devPort
+const EndPoint = `${security.endPoint}${port}/api`;
 
 const intialState = {
   listLog: [],
@@ -52,9 +53,8 @@ export default class FileSelector extends Component {
   }
 
   handleChangeDisplay(resp, e) {
-    let listLog = this.state.listLog;
-    listLog += `Nota: ${e.NumeroNota}\nStatus da Nota: ${resp.data.invoiceSendResponse.retorno["$value"]}\n-----------------------------------------------------------------------------------------------------------------------------------------------------\n`;
-    this.setState({ value: listLog });
+    this.state.listLog += `Nota: ${e.NumeroNota}\nStatus da Nota: ${resp.data.invoiceSendResponse.retorno["$value"]}\n-----------------------------------------------------------------------------------------------------------------------------------------------------\n`;
+    this.setState({ value:  this.state.listLog });
   }
 
   clearLog() {

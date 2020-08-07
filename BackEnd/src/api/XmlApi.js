@@ -6,7 +6,7 @@ const { json } = require('body-parser');
 
 
 const getConvet2Json = async (req, res) => {
-    const xmlFile = await fs.readFileSync('C:/Users/Fael_/OneDrive/Área de Trabalho/Projetos/InvoiceNotesProject/BackEnd/uploads/xmlInvoice.xml', 'utf8');
+    const xmlFile = await fs.readFileSync('C:/InvoiceNotesProject/BackEnd/uploads/xmlInvoice.xml', 'utf8');
     const xmlJson = await convert2Json(xmlFile);
     res.status(200).send(xmlJson);
 }

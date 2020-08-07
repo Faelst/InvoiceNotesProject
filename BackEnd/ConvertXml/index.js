@@ -58,13 +58,13 @@ module.exports.convert2Json = (xml) => {
       newJson[index].PISPASEP = element.pispasep[0]
       newJson[index].deducaoMaterial = element.deducaoMaterial[0]
       newJson[index].issRetido = element.issretido[0]
-      newJson[index].observacao = "DOCUMENTO EMITIDO POR ME OU EPP OPTANTE PELO SIMPLES NACIONAL"//element.obs[0]  
+      newJson[index].observacao = "DOCUMENTO EMITIDO POR ME OU ERP OPTANTE PELO SIMPLES NACIONAL"//element.obs[0]  
       newJson[index].devidoNoLocal = "0"
-      newJson[index].aliquota = "4.53"
+      newJson[index].aliquota = "5.00"
       newJson[index].descontoCondicional = "0.00"
       newJson[index].valorDeducao = "0.00"
       newJson[index].baseCalculo = element.item[0].valor[0]
-      newJson[index].valorIss = (parseFloat(element.item[0].valor[0]) * 0.0453).toFixed(2)
+      newJson[index].valorIss = (parseFloat(element.item[0].valor[0]) * 0.0500).toFixed(2)
       newJson[index].valorTotalNota = element.item[0].valor[0]
       newJson[index].tipoEnquadramento = ""
       newJson[index].tipoIss = "M"

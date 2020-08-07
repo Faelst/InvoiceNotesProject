@@ -1,14 +1,12 @@
 var soap = require("soap");
 var url = "http://www.nfecj.com.br/ws.cj/Servidor.php?wsdl";
-
+const {strInscricaoMunicipal , strSenha} = require('../../security/acess.js')
 // Vinculado
 
 module.exports.getToken = async function () {
   const credentials = {
-     strInscricaoMunicipal: "000000014",
-     strSenha: "teste",
-    //strInscricaoMunicipal: "000022483",
-    //strSenha: "VIVAS22483",
+    strInscricaoMunicipal,
+    strSenha
   };
 
   const promise = await soap

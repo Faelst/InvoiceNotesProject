@@ -26,10 +26,10 @@ async function sendAll(parseJson) {
 
 //innerBloom.nextValidInvoice().then( resp => console.log(resp))
 
-var jsonCancel = [{
-  im: "000022483",
-  numeroNota: "1798",
-  motivoCancelamento: "Nota emitida Indevidamente, DUPLICIDADE DE BOLETO DO MES DE JULHO."
-}]
+// var jsonCancel = [{
+//   im: "000022483",
+//   numeroNota: "1798",
+//   motivoCancelamento: "Nota emitida Indevidamente, DUPLICIDADE DE BOLETO DO MES DE JULHO."
+// }]
 
 innerBloom.setCancelNfeOnly(jsonCancel).then(val => console.log(val.retorno['$value']))
