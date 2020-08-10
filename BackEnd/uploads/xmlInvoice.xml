@@ -3,38 +3,38 @@
   <notafiscal>
     <dadosprestador>
       <im>000022483</im>
-      <numeronota>010194</numeronota>
+      <numeronota>010197</numeronota>
       <dataemissao>07/08/2020</dataemissao>
     </dadosprestador>
     <dadostomador>
-      <tipodoc>F</tipodoc>
-      <documento>28008230894</documento>
+      <tipodoc>J</tipodoc>
+      <documento>31737256000100</documento>
       <ie>ISENTO</ie>
-      <nometomador>CRISTIANE CASEMIRO</nometomador>
+      <nometomador>FERNANDEZ e ACCESSOR SOCIEDADE DE ADVOGADOS</nometomador>
       <pais>Brasil</pais>
-      <logradouro>Rua Maria Aparecida dos Santos</logradouro>
-      <numero>000044</numero>
-      <complemento>CASA</complemento>
-      <bairro>VILA ALBERTINA</bairro>
+      <logradouro>Avenida Sao Jorge</logradouro>
+      <numero>001141</numero>
+      <complemento>2o ANDAR</complemento>
+      <bairro>Cidade Salvador</bairro>
       <uf>SP</uf>
-      <cidade>Campos do Jordao</cidade>
-      <cep>12460000</cep>
+      <cidade>Jacarei</cidade>
+      <cep>12312000</cep>
       <email>NT</email>
     </dadostomador>
     <dadosservico>
       <pais>Brasil</pais>
-      <logradouro>Rua Maria Aparecida dos Santos</logradouro>
-      <numero>000044</numero>
-      <complemento>CASA</complemento>
-      <bairro>VILA ALBERTINA</bairro>
+      <logradouro>Avenida Sao Jorge</logradouro>
+      <numero>001141</numero>
+      <complemento>2o ANDAR</complemento>
+      <bairro>Cidade Salvador</bairro>
       <uf>SP</uf>
-      <cidade>Campos do Jordao</cidade>
-      <cep>12460000</cep>
+      <cidade>Jacarei</cidade>
+      <cep>12312000</cep>
     </dadosservico>
     <detalheservico>
       <item>
-        <descricao>COD 100 SERVICO DE VALOR ADICIONADO- NFSE#@SP Fonte: IBPT Chave 02C353 Tributos Aprox.:  Federal R$ 12,09 (13,45%) Municipal R$ 1,80 (2,00%) Total R$ 13,89 (15,45%)</descricao>
-        <valor>89.90</valor>
+        <descricao>240 Mbps - SCM - via fibra - 104,90 - Boleto via Correio - NFSE#@SP Fonte: IBPT Chave 02C353 Tributos Aprox.:  Federal R$ 9,28 (13,44%) Municipal R$ 1,38 (2,00%) Total R$ 10,66 (15,44%)</descricao>
+        <valor>69.03</valor>
         <codigo>6190601</codigo>
       </item>
       <descontoIncondicional>0.00</descontoIncondicional>
@@ -51,86 +51,38 @@
   <notafiscal>
     <dadosprestador>
       <im>000022483</im>
-      <numeronota>010195</numeronota>
+      <numeronota>010198</numeronota>
       <dataemissao>07/08/2020</dataemissao>
     </dadosprestador>
     <dadostomador>
       <tipodoc>J</tipodoc>
-      <documento>51626505000105</documento>
+      <documento>04825937000157</documento>
       <ie>ISENTO</ie>
-      <nometomador>I-CONDOMINIO JARDIM VEU DA NOIVA</nometomador>
+      <nometomador>ARATU AMBIENTAL LTDA</nometomador>
       <pais>Brasil</pais>
-      <logradouro>Avenida Pedro Paulo</logradouro>
-      <numero>001000</numero>
-      <complemento>Condominio</complemento>
-      <bairro>Vila Capivari</bairro>
+      <logradouro>Willy Conrado Bohlen</logradouro>
+      <numero>000350</numero>
+      <complemento>.</complemento>
+      <bairro>Parque Aeroporto</bairro>
       <uf>SP</uf>
-      <cidade>Campos do Jordao</cidade>
-      <cep>12460000</cep>
-      <email>financeiro@escritoriouniao.com.br</email>
+      <cidade>Taubate</cidade>
+      <cep>12051381</cep>
+      <email>NT</email>
     </dadostomador>
     <dadosservico>
       <pais>Brasil</pais>
-      <logradouro>Avenida Pedro Paulo</logradouro>
-      <numero>001000</numero>
-      <complemento>Condominio</complemento>
-      <bairro>Vila Capivari</bairro>
+      <logradouro>Willy Conrado Bohlen</logradouro>
+      <numero>000350</numero>
+      <complemento>.</complemento>
+      <bairro>Parque Aeroporto</bairro>
       <uf>SP</uf>
-      <cidade>Campos do Jordao</cidade>
-      <cep>12460000</cep>
+      <cidade>Taubate</cidade>
+      <cep>12051381</cep>
     </dadosservico>
     <detalheservico>
       <item>
-        <descricao>SERVICO PADRAO - VEU DA NOIVA (EDITAR)#@SP Fonte: IBPT Chave 02C353 Tributos Aprox.:  Federal R$ 33,62 (13,45%) Municipal R$ 5,00 (2,00%) Total R$ 38,62 (15,45%)</descricao>
-        <valor>250.00</valor>
-        <codigo>6190601</codigo>
-      </item>
-      <descontoIncondicional>0.00</descontoIncondicional>
-      <inss>0.00</inss>
-      <ir>0.00</ir>
-      <csll>0.00</csll>
-      <cofins>0.00</cofins>
-      <pispasep>0.00</pispasep>
-      <deducaoMaterial>0.00</deducaoMaterial>
-      <issretido>0</issretido>
-      <obs>.</obs>
-    </detalheservico>
-  </notafiscal>
-  <notafiscal>
-    <dadosprestador>
-      <im>000022483</im>
-      <numeronota>010196</numeronota>
-      <dataemissao>07/08/2020</dataemissao>
-    </dadosprestador>
-    <dadostomador>
-      <tipodoc>J</tipodoc>
-      <documento>08696043000165</documento>
-      <ie>ISENTO</ie>
-      <nometomador>SV HOLDING LTDA</nometomador>
-      <pais>Brasil</pais>
-      <logradouro>Rua Iguatemi</logradouro>
-      <numero>000192</numero>
-      <complemento>23o andar ? cj. 231</complemento>
-      <bairro>Itaim Bibi</bairro>
-      <uf>SP</uf>
-      <cidade>Sao Paulo</cidade>
-      <cep>01451010</cep>
-      <email>fiscal@uvidigal.com.br</email>
-    </dadostomador>
-    <dadosservico>
-      <pais>Brasil</pais>
-      <logradouro>Rua Iguatemi</logradouro>
-      <numero>000192</numero>
-      <complemento>23o andar ? cj. 231</complemento>
-      <bairro>Itaim Bibi</bairro>
-      <uf>SP</uf>
-      <cidade>Sao Paulo</cidade>
-      <cep>01451010</cep>
-    </dadosservico>
-    <detalheservico>
-      <item>
-        <descricao>IP Valido. 100 Mb - SCM - Empresarial#@SP Fonte: IBPT Chave 02C353 Tributos Aprox.:  Federal R$ 24,39 (13,45%) Municipal R$ 3,63 (2,00%) Total R$ 28,02 (15,45%)</descricao>
-        <valor>181.37</valor>
+        <descricao>50 Mbps - SCM + IP Valido - 1000,00 - NFSE#@SP Fonte: IBPT Chave 02C353 Tributos Aprox.:  Federal R$ 29,58 (13,45%) Municipal R$ 4,40 (2,00%) Total R$ 33,98 (15,45%)</descricao>
+        <valor>219.90</valor>
         <codigo>6190601</codigo>
       </item>
       <descontoIncondicional>0.00</descontoIncondicional>
