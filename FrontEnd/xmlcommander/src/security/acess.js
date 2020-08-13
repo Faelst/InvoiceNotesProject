@@ -5,6 +5,6 @@ const portClass = {
     prodPort : 3003
 }
 
-const endPoint = `http://177.52.246.165:`;
+const endPoint = `http://localhost:`;
 
 export default {portClass , endPoint}
