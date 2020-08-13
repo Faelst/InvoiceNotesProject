@@ -11,11 +11,11 @@ import ProgressBar from "../Components/ProgressBar";
 import Main from "../Components/Main";
 
 //css's
-import "./FileSelector.css";
+import "./css/FileSelector.css";
 import security from '../security/acess'
 
 //API URLs
-const port = security.portClass.prodPort // security.portClass.devPort
+const port = security.portClass.devPort // security.portClass.devPort
 const EndPoint = `${security.endPoint}${port}/api`;
 
 const intialState = {
@@ -53,8 +53,8 @@ export default class FileSelector extends Component {
   }
 
   handleChangeDisplay(resp, e) {
-    this.state.listLog += `Nota: ${e.NumeroNota}\nStatus da Nota: ${resp.data.invoiceSendResponse.retorno["$value"]}\n-----------------------------------------------------------------------------------------------------------------------------------------------------\n`;
-    this.setState({ value:  this.state.listLog });
+    const listLog = `Nota: ${e.NumeroNota}\nStatus da Nota: ${resp.data.invoiceSendResponse.retorno["$value"]}\n-----------------------------------------------------------------------------------------------------------------------------------------------------\n`;
+    this.setState({ listLog: this.state.listLog.concat(listLog) });
   }
 
   clearLog() {
@@ -63,7 +63,6 @@ export default class FileSelector extends Component {
 
   handleSelectChange(e) {
     console.log(e.target.files[0]);
-
     this.setState({ selectedFile: e.target.files[0], loaded: 0 });
   }
 
@@ -114,7 +113,7 @@ export default class FileSelector extends Component {
           <InputFile handleSelectChange={this.handleSelectChange} />
           <Button handleChangeDisplay={this.handleChangeDisplay} postFile={this.postFile} />
           <ProgressBar now={this.state.progressSend} label={this.state.progressSend !== 0 ? `${this.state.progressSend}%` : ""} variant={this.state.progressColor} />
-          <DisplayLog value={this.state.value} />
+          <DisplayLog value={this.state.listLog} />
         </div>
       </Main>
     );
