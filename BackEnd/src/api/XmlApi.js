@@ -3,10 +3,10 @@ const fs = require('fs');
 const innerBloom = require(`../../InnerbloomProject/src/Functions`);
 const { convert2Json } = require('../../ConvertXML/index');
 const { json } = require('body-parser');
-
+const path = require('path')
 
 const getConvet2Json = async (req, res) => {
-    const xmlFile = await fs.readFileSync('C:/InvoiceNotesProject/BackEnd/uploads/xmlInvoice.xml', 'utf8');
+    const xmlFile = await fs.readFileSync(path.resolve(__dirname , "../../uploads/xmlInvoice.xml"), 'utf8');
     const xmlJson = await convert2Json(xmlFile);
     res.status(200).send(xmlJson);
 }
